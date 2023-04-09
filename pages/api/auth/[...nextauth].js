@@ -25,6 +25,7 @@ export default NextAuth({
         session: async ({ session, user }) => {
             session.user.id = user.id
             session.user.username = user.username
+            session.user.isAdmin = user.isAdmin
             return Promise.resolve(session)
         },
     },
