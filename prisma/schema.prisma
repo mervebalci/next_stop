@@ -21,7 +21,6 @@ model User {
   updatedAt     DateTime  @updatedAt
   accounts      Account[]
   sessions      Session[]
-  isAdmin       Boolean   @default(false)
 }
 
 model VerificationToken {
