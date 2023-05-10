@@ -5,9 +5,12 @@ export default function Home() {
     <div>
       <Head>
         <title>Best in Town</title>
+        <meta name='description' content='Private Area' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <div className='text-center'>
+        <a href='/api/auth/signin'>login</a>
         <h1 className='font-extrabold text-3xl mt-10'>The Best in Town</h1>
         
         <div className='grid md:grid-cols-3'>
